@@ -7,7 +7,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
         const m = Math.floor(low + (high - low )/ 2); // m = midpoint of needle 
         const v = haystack[m]; 
         
-        if (v == needle){ // if value == needle , midpoint is found
+        if (v === needle){ // if value = needle , midpoint is found
             return true; 
         } else if (v > needle ){  // value is greater than needle... 
             high = m;
